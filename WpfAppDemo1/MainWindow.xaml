@@ -7,6 +7,53 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel
+             Grid.Row="0"
+             Grid.Column="0"
+             Margin="5">
+            <TextBlock Text="Input text here:"/>
+            <TextBox x:Name="inputTextBox"></TextBox>
+        </StackPanel>
+
+        <Button
+            Grid.Row="0"
+            Grid.Column="1"
+            FontSize="24"
+            Click="Button_Click">
+            Do it
+        </Button>
+
+        <!--<Rectangle
+            Grid.Row="1"
+            Grid.Column="1"
+            Fill="Aquamarine">
+        </Rectangle>-->
+        <Grid
+            Grid.Row="1"
+            Grid.Column="1"
+            Background="Aquamarine"
+            >
+            <TextBlock
+                x:Name="targetTextBlock"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">dsfdsf</TextBlock>
+        </Grid>
+        <ListBox
+            x:Name="stringsListBox"
+            HorizontalAlignment="Left"
+            Height="140"
+            Margin="10,10,0,0"
+            Grid.Row="1"
+            VerticalAlignment="Top"
+            Width="238"/>
     </Grid>
 </Window>
